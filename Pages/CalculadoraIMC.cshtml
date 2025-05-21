@@ -1,0 +1,69 @@
+﻿@page
+@model introduccionRazor_ASPNet.Pages.CalculadoraIMCModel
+@{
+   
+}
+<div class="container mt-5">
+    <h1 class="text-center mb-4">Calculadora de Índice de Masa Corporal (IMC)</h1>
+
+    <form method="post" class="card p-4 shadow-sm" style="max-width: 500px; margin: 0 auto;">
+        <div class="mb-3">
+            <label for="peso" class="form-label">Peso (kg) Ejemplo:80.00 para 80kg cerrados</label>
+            <input type="number" step="0.1" class="form-control" id="peso" name="Peso" value="@Model.Peso" required min="1">
+        </div>
+
+        <div class="mb-3">
+            <label for="altura" class="form-label">Altura:</label>
+            <div class="input-group">
+                <input type="number" step="0.01" class="form-control" id="altura" name="Altura" value="@Model.Altura" required min="0.5" max="3">
+                <span class="input-group-text">metros</span>
+            </div>
+            <small class="text-muted">Ejemplo: 1.75 (para 1 metro 75 cm)</small>
+        </div>
+
+        <button type="submit" class="btn btn-primary w-100">Calcular IMC</button>
+
+        @if (!ViewData.ModelState.IsValid)
+        {
+            <div class="alert alert-danger mt-3">
+                @foreach (var error in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+                {
+                    <p class="mb-1">@error.ErrorMessage</p>
+                }
+            </div>
+        }
+    </form>
+
+    @if (Model.Resultado != null)
+    {
+        <div class="card mt-4 shadow-sm" style="max-width: 500px; margin: 0 auto;">
+            <div class="card-header bg-primary text-white">
+                <h3 class="mb-0">Resultados</h3>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p><strong>IMC:</strong> <span class="fs-4 text-primary">@Model.Resultado.CalcularIMC()</span></p>
+                        <p>
+                            <strong>Clasificación:</strong> <span class="badge
+                                @(Model.Resultado.CalcularIMC() < 18 ? "bg-info" :
+                                                                                                Model.Resultado.CalcularIMC() < 25 ? "bg-success" :
+                                                                                                Model.Resultado.CalcularIMC() < 30 ? "bg-warning" : "bg-danger")">
+                            @Model.Resultado.ObtenerClasificacion()
+                        </span>
+                    </p>
+                    <div class="alert alert-info mt-3">
+                        <p class="mb-0">@Model.Resultado.ObtenerRecomendacion()</p>
+                    </div>
+                </div>
+                @if (!string.IsNullOrEmpty(Model.Resultado.ObtenerImagen()))
+                    {
+                        <div class="col-md-6 text-center">
+                            <img src="@Model.Resultado.ObtenerImagen()" alt="Recomendación" class="img-fluid rounded" style="max-height: 150px;">
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    }
+</div>

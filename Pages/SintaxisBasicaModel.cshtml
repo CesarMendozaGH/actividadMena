@@ -1,0 +1,27 @@
+﻿@page
+@model introduccionRazor_ASPNet.Pages.SintaxisBasicaModelModel
+@{
+}
+
+}
+
+<!-- BLOQUE SIMPLE -->
+@{
+	var nombre = "Lorena";
+}
+
+
+<!-- Expresion de linea -->
+
+<p> El valor de la variable nombre es: @nombre/p>
+
+
+<!--Bloque con multiples sentencias -->
+@{
+	var bienvenida = "Bienvenido a nuestro sitio";
+	var diaSemana = DateTime.Now.DayOfWeek;
+	var mensajeBienvenida = bienvenida + "Aqui en leon es" + diaSemana;
+}
+
+<p>El mensaje de bienvenida es @mensajeBienvenida</p>
+

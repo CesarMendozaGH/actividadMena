@@ -1,0 +1,89 @@
+is_global = true
+build_property.TargetFramework = net9.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = introduccionRazor_ASPNet
+build_property.RootNamespace = introduccionRazor_ASPNet
+build_property.ProjectDir = C:\Users\aquat\OneDrive\Desktop\IDGS_904\DesWebIntegral\proyectos\introduccionRazor_ASPNet\introduccionRazor_ASPNet\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 9.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\aquat\OneDrive\Desktop\IDGS_904\DesWebIntegral\proyectos\introduccionRazor_ASPNet\introduccionRazor_ASPNet
+build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 9.0
+build_property.EnableCodeStyleSeverity = 
+
+[C:/Users/aquat/OneDrive/Desktop/IDGS_904/DesWebIntegral/proyectos/introduccionRazor_ASPNet/introduccionRazor_ASPNet/Pages/ArreglosModel.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXJyZWdsb3NNb2RlbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/aquat/OneDrive/Desktop/IDGS_904/DesWebIntegral/proyectos/introduccionRazor_ASPNet/introduccionRazor_ASPNet/Pages/CalculadoraIMC.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2FsY3VsYWRvcmFJTUMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/aquat/OneDrive/Desktop/IDGS_904/DesWebIntegral/proyectos/introduccionRazor_ASPNet/introduccionRazor_ASPNet/Pages/CiclosModel.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2ljbG9zTW9kZWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/aquat/OneDrive/Desktop/IDGS_904/DesWebIntegral/proyectos/introduccionRazor_ASPNet/introduccionRazor_ASPNet/Pages/CifradoCesar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2lmcmFkb0Nlc2FyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/aquat/OneDrive/Desktop/IDGS_904/DesWebIntegral/proyectos/introduccionRazor_ASPNet/introduccionRazor_ASPNet/Pages/Condicionales.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29uZGljaW9uYWxlcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/aquat/OneDrive/Desktop/IDGS_904/DesWebIntegral/proyectos/introduccionRazor_ASPNet/introduccionRazor_ASPNet/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/aquat/OneDrive/Desktop/IDGS_904/DesWebIntegral/proyectos/introduccionRazor_ASPNet/introduccionRazor_ASPNet/Pages/holaMundoRazor.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcaG9sYU11bmRvUmF6b3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/aquat/OneDrive/Desktop/IDGS_904/DesWebIntegral/proyectos/introduccionRazor_ASPNet/introduccionRazor_ASPNet/Pages/Igualdad.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSWd1YWxkYWQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/aquat/OneDrive/Desktop/IDGS_904/DesWebIntegral/proyectos/introduccionRazor_ASPNet/introduccionRazor_ASPNet/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/aquat/OneDrive/Desktop/IDGS_904/DesWebIntegral/proyectos/introduccionRazor_ASPNet/introduccionRazor_ASPNet/Pages/ordenamiento.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcb3JkZW5hbWllbnRvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/aquat/OneDrive/Desktop/IDGS_904/DesWebIntegral/proyectos/introduccionRazor_ASPNet/introduccionRazor_ASPNet/Pages/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/aquat/OneDrive/Desktop/IDGS_904/DesWebIntegral/proyectos/introduccionRazor_ASPNet/introduccionRazor_ASPNet/Pages/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/aquat/OneDrive/Desktop/IDGS_904/DesWebIntegral/proyectos/introduccionRazor_ASPNet/introduccionRazor_ASPNet/Pages/SintaxisBasicaModel.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2ludGF4aXNCYXNpY2FNb2RlbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/aquat/OneDrive/Desktop/IDGS_904/DesWebIntegral/proyectos/introduccionRazor_ASPNet/introduccionRazor_ASPNet/Pages/SumaNumerosModel.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3VtYU51bWVyb3NNb2RlbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/aquat/OneDrive/Desktop/IDGS_904/DesWebIntegral/proyectos/introduccionRazor_ASPNet/introduccionRazor_ASPNet/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/aquat/OneDrive/Desktop/IDGS_904/DesWebIntegral/proyectos/introduccionRazor_ASPNet/introduccionRazor_ASPNet/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/aquat/OneDrive/Desktop/IDGS_904/DesWebIntegral/proyectos/introduccionRazor_ASPNet/introduccionRazor_ASPNet/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-2m1xejxweb

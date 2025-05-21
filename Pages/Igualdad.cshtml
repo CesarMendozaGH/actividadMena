@@ -1,0 +1,36 @@
+﻿@page
+@model introduccionRazor_ASPNet.Pages.IgualdadModel
+@{
+}
+
+<h2>Expansión de la igualdad</h2>
+
+<form method="post">
+    <label>A: <input asp-for="A" type="number" /></label><br />
+    <label>B: <input asp-for="B" type="number" /></label><br />
+    <label>X: <input asp-for="X" type="number" /></label><br />
+    <label>Y: <input asp-for="Y" type="number" /></label><br />
+    <label>N: <input asp-for="N" type="number" min="0" /></label><br />
+    <button type="submit">Calcular</button>
+</form>
+
+
+
+@if (!string.IsNullOrEmpty(Model.Resultado))
+{
+    <h3>Resultado final:</h3>
+    <div>@Model.Resultado</div>
+    
+}
+@if (Model.Iteraciones != null && Model.Iteraciones.Count > 0)
+{
+    <h3>Iteraciones de la sumatoria:</h3>
+    <ul>
+        @foreach (var iter in Model.Iteraciones)
+        {
+            <li>@iter</li>
+        }
+    </ul>
+    <h3>Resultado final de la sumatoria:</h3>
+    <div>@Model.SumaTotal</div>
+}

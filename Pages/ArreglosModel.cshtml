@@ -1,0 +1,32 @@
+﻿@page
+@model introduccionRazor_ASPNet.Pages.ArreglosModelModel
+@{
+}
+@{
+	//Definimos un arreglo de datos tipo String
+	String[] nombres = { "Ana", "Juan", "Pedro", "Maria" };
+
+	//Obtenemos la posicion en la que se encuentra el nombre de pedro
+	//pedro.
+	int i = Array.IndexOf(nombres, "pedro") + 1;
+
+	//Obtenemos el numero de posiciones del arreglo
+	int len = nombres.Length;
+
+	//Obtenemos el nombre que se encuentra en la segunda posicion
+	//(1)
+	String x = nombres[2 - 1];
+
+}
+
+
+<h3>Lista de nombres del arreglo</h3>
+<ol>
+	@foreach (var nombre in nombres)
+	{
+		<li>@nombre</li>
+	}
+</ol>
+<p>El numero de personas en el arreglo es: @len </p>
+<p>La persona en la posicion 2 es : @x </p>
+<p>Pedro esta ahora en la posicion: @i </p>

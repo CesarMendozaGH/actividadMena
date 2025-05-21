@@ -1,0 +1,69 @@
+﻿@page
+@model introduccionRazor_ASPNet.Pages.CondicionalesModel
+@{
+}
+@{
+	var calificacion = 8;
+}
+
+<h3>Intrucciones condicionales</h3>
+<p>Tu calificacion es de @calificacion</p>
+
+@if (calificacion >= 8)
+{
+	<p>Tu calificacion es aprovado </p>
+}
+else
+{
+	<p>Tu calificacion es reprobado </p>
+}
+<br />
+
+<h3>Intrucciones condicionales Else-If</h3>
+@{
+	var precio = 25;
+}
+<p>El precio del producto es: @precio</p>
+
+@if (precio >= 30)
+{
+	<p>El precio es alto</p>
+}
+else if (precio > 20 && precio < 30)
+{
+	<p>El precio esta bien </p>
+}
+else
+{
+	<p> El precio es bajo </p>
+}
+<br />
+
+
+<h3> Condicionales Multiples switch-case</h3>
+@{
+
+	var diaSemana = DateTime.Now.DayOfWeek;
+	var dia = diaSemana.ToString();
+	var mensaje = "";
+}
+
+@switch (dia)
+{
+	case "Monday":
+		mensaje = "Este es el primer dia de la semana";
+		break;
+
+	case "Thursday":
+		mensaje = "Falta un dia para el viernes";
+		break;
+	case "Friday":
+		mensaje = "Hoy es viernes y ...";
+		break;
+	defaul:
+		mensaje = "Hoy es: " + dia;
+		break;
+}
+
+<p>@mensaje</p>
+

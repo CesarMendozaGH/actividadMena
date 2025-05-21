@@ -1,0 +1,51 @@
+﻿@page
+@model introduccionRazor_ASPNet.Pages.CiclosModelModel
+@{
+}
+<h3> Ejemplo Ciclo While </h3>
+@{
+	var cont = 1;
+
+	while (cont < 10)
+	{
+		<p>@cont</p>
+		cont += 1;
+	}
+}
+<br />
+
+
+
+<h3>Ejemplo do While </h3>
+@{
+	cont = 1;
+
+	do
+	{
+		<p>@cont</p>
+		cont += 1;
+	}
+	while (cont < 10);
+
+}
+<br />
+
+
+<h3>Ejemplo Ciclo For </h3>
+
+@for (var i = 10; i < 21; i++)
+{
+	<p>@i</p>
+}
+<br />
+
+
+<h3>Ejemplo Ciclo For Each</h3>
+<ul>
+	@foreach (var element in HttpContext.Request.Headers)
+	{
+		<li> @element</li>
+	}
+</ul>
+<br />
+

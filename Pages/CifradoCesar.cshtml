@@ -1,0 +1,42 @@
+﻿@page
+@model introduccionRazor_ASPNet.Pages.CifradoCesarModel
+@{
+}
+
+
+<h2 class="text-center">Cifrado César</h2>
+
+<div class="container" style="max-width: 500px;">
+    <form method="post" class="border p-3 rounded">
+        <div class="mb-3">
+            <label class="form-label">Mensaje:</label>
+            <input type="text" class="form-control" asp-for="Mensaje" required>
+        </div>
+        
+        <div class="mb-3">
+            <label class="form-label">Desplazamiento:</label>
+            <input type="number" class="form-control" asp-for="Desplazamiento" required>
+        </div>
+        
+        <div class="mb-3">
+            <div class="form-check">
+                <input class="form-check-input" type="radio" asp-for="Accion" value="true" checked>
+                <label class="form-check-label">Cifrar</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" asp-for="Accion" value="false">
+                <label class="form-check-label">Descifrar</label>
+            </div>
+        </div>
+        
+        <button type="submit" class="btn btn-primary w-100">Procesar</button>
+    </form>
+
+    @if (!string.IsNullOrEmpty(Model.Resultado))
+    {
+        <div class="mt-3 p-3 bg-light rounded">
+            <h4>Resultado:</h4>
+            <p class="lead">@Model.Resultado</p>
+        </div>
+    }
+</div>

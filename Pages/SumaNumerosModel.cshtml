@@ -1,0 +1,20 @@
+﻿@page
+@model introduccionRazor_ASPNet.Pages.SumaNumerosModelModel
+@{
+}
+
+<h3>Suma de dos numeros</h3>
+
+<form method="post">    
+    <p>Numero 1: <input type="number" asp-for="num1" /></p> <!--con asp-for se asocian los campos del modelo con lo que queremos del HTML-->
+    <p>Numero 2: <input type="number" asp-for="num2" /></p>
+    <p><input type="submit" value="Calcular" />"</p>
+</form>
+
+<!--Ahora mostraremos la operacion de la suma-->
+@if (Model.suma != 0)
+{
+    <div>
+        <h3>Suma = @Model.suma</h3>
+    </div>    
+}

@@ -1,0 +1,99 @@
+﻿@page
+@model introduccionRazor_ASPNet.Pages.odernamientoModel
+@{
+}
+@{
+    ViewData["Title"] = "Números Aleatorios y Estadísticas";
+}
+
+<div class="container">
+    <h1 class="mb-4">Números Aleatorios y Estadísticas</h1>
+
+    <div class="card mb-4">
+        <div class="card-header bg-primary text-white">
+            <h2 class="h5 mb-0">Arreglo Aleatorio</h2>
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-bordered">
+                    <tbody>
+                        <tr>
+                            @foreach (var numero in Model.numerosAleatorios)
+                            {
+                                <td>@numero</td>
+                            }
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card mb-4">
+                <div class="card-header bg-success text-white">
+                    <h2 class="h5 mb-0">Resultados Estadísticos</h2>
+                </div>
+                <div class="card-body">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <strong>Suma:</strong>
+                            <span>@Model.suma</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <strong>Promedio:</strong>
+                            <span>@Model.promedio</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <strong>Moda:</strong>
+                            <span>
+                                @if (Model.moda.Count > 0)
+                                {
+                                    @string.Join(" y ", Model.moda)
+                                }
+                                else
+                                {
+                                    <text>No hay moda, todos los numeros son diferentes</text>
+                                }
+                            </span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <strong>Mediana:</strong>
+                            <span>@Model.mediana</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="card mb-4">
+                <div class="card-header bg-info text-white">
+                    <h2 class="h5 mb-0">Arreglo Ordenado</h2>
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table table-bordered">
+                            <tbody>
+                                <tr>
+                                    @foreach (var numero in Model.numerosOrdenados)
+                                    {
+                                        <td>@numero</td>
+                                    }
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-center mt-3 mb-5">
+        <form method="get">
+            <button type="submit" class="btn btn-primary">Generar Nuevos Números</button>
+        </form>
+    </div>
+</div>
+
